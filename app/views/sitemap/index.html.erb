@@ -13,7 +13,7 @@
     <h3><%= taxonomy.name %></h3>
     <ul>
     <% taxons.each do |taxon| %>
-      <% unless taxon.name == taxonomy.name %><li><%= link_to taxon.name, @public_dir + taxon.permalink %></li><% end %>
+      <% unless taxon.name == taxonomy.name %><li><%= link_to taxon.name, @public_dir + 'tx/' + taxon.name %></li><% end %>
     <% end %>
     </ul>
   <% end %>

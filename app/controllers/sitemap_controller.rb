@@ -2,7 +2,11 @@ class SitemapController < Spree::BaseController
   def index
     @public_dir = root_url
     
-    @products = Product.active.find(:all)
+    if Product.scopes[:revised]    
+        @products = Product.active.revised.find(:all)
+    else
+        @products = Product.active.find(:all)
+    end
     @taxonomies = Taxonomy.all
     
     # Get Pages from static_content extension
