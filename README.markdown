@@ -1,7 +1,7 @@
 SUMMARY
 =======
 Modified by Matteo Folin for:
-1. only list revised product;
+1. only list revised product
 2. use custom routes: /tx/taxon-name
 ***
 
