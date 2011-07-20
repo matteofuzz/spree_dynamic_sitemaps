@@ -57,7 +57,8 @@ class SitemapController < Spree::BaseController
       tinfo = Hash.new
       tinfo['name'] = taxon.name
       tinfo['depth'] = taxon.permalink.split('/').size
-      tinfo['link'] = 't/' + taxon.permalink 
+      #tinfo['link'] = 't/' + taxon.permalink
+      tinfo['link'] = 'tx/' + taxon.name.to_s 
       tinfo['updated'] = taxon.updated_at
       nav[taxon.permalink] = tinfo
     end
