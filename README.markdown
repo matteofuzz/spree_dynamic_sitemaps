@@ -1,8 +1,8 @@
 SUMMARY
 =======
 Modified by Matteo Folin for:
-1. only list revised product
-2. use custom routes: /tx/taxon-name
+* only list revised product
+* use custom routes: /tx/taxon-name
 ***
 
 This Spree extension generates dynamic, seo-friendly sitemaps on the fly in html, xml and txt formats.
